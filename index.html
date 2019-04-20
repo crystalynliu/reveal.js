@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,8 +26,115 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<section>
+						<h1>TDD</h1>
+						<p class="fragment"><span class="highlight-red">T</span>est-<span class="highlight-red">D</span>riven <span class="highlight-red">D</span>evelopment</p>
+					</section>
+					<section>
+						<ul>
+							<li><h2>What's TDD?</h2></li>
+							<li><h2>Why we need to use TDD?</h2></li>
+							<li><h2>How to use TDD?</h2></li>
+							<li><h2>Why we cannot use TDD better?</h2></li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>What's TDD?</h2>
+					</section>
+					<section class="text-left">
+						<h2>ATDD</h2>
+						<p class="fragment">Acceptance Test Driven Development <span class="fragment">include BDD（Behavior Driven Development）and Consumer-Driven Contracts Development etc.</span></p>
+						<h2>UTDD</h2>
+						<p class="fragment">Unit Test-Driven Development</p>
+					</section>
+					<section class="text-left">
+						<p><strong>Test-driven development (TDD)</strong> is a <span class="highlight-red">software development process</span> that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only.</p>
+					</section>
+					<section class="text-left">
+						<p>It propose by a American software enigneer <a href="https://en.wikipedia.org/wiki/Kent_Beck" target="_blank">Kent Beck</a></p>
+						<p>Test-driven development is related to the test-first programming concepts of extreme programming, begun in 1999, but more recently has created more general interest in its own right</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Why we need to use TDD?</h2>
+					</section>
+					<section>
+						<p>What's the benefit comes from TDD?</p>
+						<ul>
+							<li class="fragment">Not just validation of correctness, but can also drive the design of a program.</li>
+							<li class="fragment">Offers the ability to take small steps when required.</li>
+							<li class="fragment">Tests are document.</li>
+							<li class="fragment">Will offer enough test to protect program.</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>How to use TDD?</h2>
+					</section>
+					<section>
+						<div class="seperate">
+							<div>
+								<img src="./images/cycle.jpeg" />
+							</div>
+							<div class="fragment">
+								<p class="text-left">Test driven development cycle</p>
+								<ol>
+									<li class="fragment">Add a test</li>
+									<li class="fragment">Run all tests and see if the new test fails</li>
+									<li class="fragment">Write the code</li>
+									<li class="fragment">Run tests</li>
+									<li class="fragment">Refactor code</li>
+								</ol>	
+							</div>
+						</div>
+					</section>
+					<section>
+						
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Why we cannot use TDD better?</h2>
+					</section>
+					<section>
+						<ul>
+							<li>有很陡峭的训练曲线，需要很多基础技术的支持（tasking, test, how to refactor），先付出才能有回报</li>
+							<li>急迫的快餐文化，不能认可从长远目标来看 TDD 能带来更高的质量和更高的效率，投入产出不成正比</li>
+							<li>TDD 更多的是带来了代码质量的好吃，而与产品质量没有很大的直接关系，大多数做决定的角色都是非技术背景，所以不是很 care 代码质量。</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Q&A</h2>
+					<ul>
+						<li><a href="https://www.jianshu.com/p/62f16cd4fef3">深度解读-TDD</a></li>
+						<li>《Test-Driven Development by Example》</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Wrokshop</h2>
+						<p>你是一名体育老师，在某次课距离下课还有五分钟时，你决定搞一个游戏。此时有120名学生在上课。游戏的规则是：</p>
+					</section>
+					<section>
+						<ol>
+							<li>让所有学生拍成一队，然后按顺序报数。</li>
+							<li>学生报数时，如果所报数字是第一个特殊数（3）的倍数，那么不能说该数字，而要说Fizz；如果所报数字是第二个特殊数（5）的倍数，那么要说Buzz；如果所报数字是第三个特殊数（7）的倍数，那么要说Whizz。</li>
+							<li>学生报数时，如果所报数字同时是两个特殊数的倍数情况下，也要特殊处理，比如第一个特殊数和第二个特殊数的倍数，那么不能说该数字，而是要说FizzBuzz, 以此类推。如果同时是三个特殊数的倍数，那么要说FizzBuzzWhizz。</li>
+						</ol>
+					</section>
+					<section>
+						<p class="text-left">
+							学生报数时，如果所报数字包含了第一个特殊数，那么也不能说该数字，而是要说相应的单词，比如本例中第一个特殊数是3，那么要报13的同学应该说Fizz。如果数字中包含了第一个特殊数，那么忽略规则2和规则3，比如要报35的同学只报Fizz，不报BuzzWhizz。
+						</p>
+					</section>
+				</section>
+
 			</div>
 		</div>
 
